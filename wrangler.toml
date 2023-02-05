@@ -4,9 +4,6 @@ compatibility_date = "2023-02-05"
 usage_model = "bundled"
 env = { }
 
-[triggers]
-crons = [ "0 0 * * sat" ]
-
 [[kv_namespaces]]
 id = "68194606c5474ece8ff004600f32fabc"
 binding = "nicks"
