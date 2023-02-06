@@ -30,9 +30,12 @@ export default {
 						const data = await env.nicks.get(key);
 
 						if (data) {
-							res = new Response(JSON.stringify({ nick: data }), {
-								status: 200,
-							});
+							res = new Response(
+								JSON.stringify({ nick: JSON.parse(data).nick }),
+								{
+									status: 200,
+								}
+							);
 						} else {
 							res = new Response(
 								JSON.stringify({
